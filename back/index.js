@@ -7,7 +7,7 @@ app.use(cors())
 app.post('/user',(req,res)=>{
     console.log(req.body)
     let {password,nombre} = req.body;
-    mongoose.connect('mongodb+srv://josealberto:XeBlVwLVShVPOUyg@cluster0.43oty.mongodb.net/azul');
+    mongoose.connect('mongodb+srv://josealberto:pass@cluster0.43oty.mongodb.net/azul');
     let personSchema = new mongoose.Schema({
         nombre: String,
         password: Number,
